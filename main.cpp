@@ -3,16 +3,17 @@
 //#include "SellItem.cpp"
 #include "Bag.cpp"
 
-
 using namespace std;
 
+void ListInventory();
 
 int main() {
+
 
     /*
     const int MAX_SIZE = 10;
     Item* item1[MAX_SIZE] = { new Item(), new Item(), new Item() };
-    item1[2]->setName("Imotou");
+    item1[2]->setName("Daniel");
     item1[1]->setName("FUKUSHIMA");
     item1[0]->setName("NAGAZAKI");
     
@@ -33,7 +34,7 @@ int main() {
     cout << "------------ NEW ITEM ---------------" << endl;
 
     item1[5] = new Item();
-    item1[5]->setName("BAKA ANE");
+    item1[5]->setName("Paul");
     item1[5]->print();  */
  
     /*
@@ -42,7 +43,7 @@ int main() {
     item1->print();
     item1->Sell(); */
     
-
+/*
     SellItem* item1 = new SellItem();  
     item1->setName("POKEBALL");
     item1->setColor("RED"); 
@@ -98,21 +99,35 @@ int main() {
     cout << "--------------- Item 2 ---------------------- " << endl;
     superball->print();
     cout << "--------------- Item 3 ----------------------  " << endl;
-    hyperball->print();
-    
+    hyperball->print(); */
 
-    /*
-    SellItem* item4 = item3;   error: invalid conversion from 'Item*' to 'SellItem*' [-fpermissive]
-    item4->print(); */
+    //cout << MAX_SIZE << endl;
+   // ListInventory();
+
+    /*Inventory[0] = new Item("POKEBALL","RED","CATCH","IRON",10);
+    Inventory[1] = new Item("SUPERBALL","BLUE","CATCH","IRON",5);
+    Inventory[2] = new Item("HYPERBALL","YELLOW","CATCH","IRON",20);
+    Inventory[3] = new Item("MASTER BALL","PURPLE","CATCH","IRON",1);
+    Inventory[4] = new Item("TIME BALL","WHITE","CATCH","IRON",7);
+    Inventory[5] = new Item("FAST BALL","YELLOW BLUE","CATCH","IRON",3);*/
 
 
-
-    /*
-    cout << "------ downcasting ------"<< endl;   
-    MovablePoint* ptrMP1 = (MovablePoint*) ptrP1;
-    MovablePoint* ptrMP2 = dynamic_cast<MovablePoint*>(ptrP1);
-    // downcast requires explicit casting operator*/
-    
-    
+    ListInventory();
     return 0;
+}
+
+
+void ListInventory() {
+    for (int i = 0; i < MAX_SIZE; i++)
+    {
+       // if (&Inventory[i]->getQuantity == 0 ) i++;
+        //else{
+            cout << "-------------- Item " << i+1 << " ---------- "<< endl;
+            Inventory[i]->print();
+            cout << "\n";
+        //}
+
+        
+    }
+        
 }
