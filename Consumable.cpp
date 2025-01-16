@@ -20,7 +20,7 @@ void Consumable::setEffect (string effect) {
 //--------------- GETTERS -----------------------//
 
 
-void Consumable::getEffect() const {
+string Consumable::getEffect() const {
     return this->effect;
 }
 

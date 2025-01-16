@@ -9,7 +9,7 @@ using namespace std;
 Item::Item() : name("UNDEFINED"), category("UNDEFINED"), material("UNDEFINED"), quantity(0)  {}
 
 Item::Item(string name, string category, string material, int quantity) 
-    : name(name), color(color), category(category), material(material), quantity(quantity)  {}
+    : name(name), category(category), material(material), quantity(quantity)  {}
 //--------------- DESTRUCTOR -----------------------//
 /*
 Item::~Item() :  {

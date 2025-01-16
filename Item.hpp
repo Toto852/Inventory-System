@@ -18,8 +18,7 @@ public :
 
     // Constructor
     Item();
-    Item(string name);
-    Item(string name, string color, string category, string material, int quantity);
+    Item(string name, string category, string material, int quantity);
 
     //~Item();
 
