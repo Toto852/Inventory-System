@@ -35,6 +35,8 @@ public :
     string getMaterial() const;
     int getQuantity() const;
 
+    void increaseQuantity(int amount);
+
     virtual void display() const;
 
 };

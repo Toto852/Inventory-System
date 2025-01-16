@@ -27,7 +27,11 @@ public :
     // Remove Item on the inventory
     void removeItem(const string& name);
 
+    // Delete all items on the inventory
+    void clearInventory();
 
+    // Add or remove quantity
+    void addQuanity(const string& name, const int quantity );
     void removeQuanity(const string& name, const int quantity );
 
 };

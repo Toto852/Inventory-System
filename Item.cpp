@@ -10,16 +10,7 @@ Item::Item() : name("UNDEFINED"), category("UNDEFINED"), material("UNDEFINED"), 
 
 Item::Item(string name, string category, string material, int quantity) 
     : name(name), category(category), material(material), quantity(quantity)  {}
-//--------------- DESTRUCTOR -----------------------//
-/*
-Item::~Item() :  {
-    delete(name); 
-    delete(color); 
-    delete(features); 
-    delete(material); 
-    delete(quantity);
-    cout << " DELETE COMPLETE " << endl; 
-}*/
+
 
 //-------------- SETTERS ---------------------------//
 
@@ -55,6 +46,10 @@ string Item::getMaterial() const {
 
 int Item::getQuantity() const {
     return this->quantity;
+}
+
+void Item::increaseQuantity(int amount) {
+    this->quantity += amount;
 }
 
 
