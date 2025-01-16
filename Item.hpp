@@ -10,8 +10,7 @@ class Item {
 
 protected : 
     string name;
-    string color;
-    string features;
+    string category;
     string material;
     int quantity;
 
@@ -20,26 +19,24 @@ public :
     // Constructor
     Item();
     Item(string name);
-    Item(string name, string color, string features, string material, int quantity);
+    Item(string name, string color, string category, string material, int quantity);
 
     //~Item();
 
     // SETTERS
     void setName(string name);
-    void setColor(string color);
-    void setFeatures(string features);
+    void setCategory(string category);
     void setMaterial(string material);
     void setQuantity(int quantity);
 
 
     // GETTERS
     string getName() const; 
-    string getColor() const;
-    string getFeatures() const;
+    string getCategory() const;
     string getMaterial() const;
     int getQuantity() const;
 
-    virtual void print() const;
+    virtual void display() const;
 
 };
 

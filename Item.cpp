@@ -6,10 +6,10 @@ using namespace std;
 
 //--------------- CONSTRUCTOR -----------------------//
 
-Item::Item() : name("UNDEFINED"), color("UNDEFINED"), features("UNDEFINED"), material("UNDEFINED"), quantity(0)  {}
+Item::Item() : name("UNDEFINED"), category("UNDEFINED"), material("UNDEFINED"), quantity(0)  {}
 
-Item::Item(string name, string color, string features, string material, int quantity) 
-    : name(name), color(color), features(features), material(material), quantity(quantity)  {}
+Item::Item(string name, string category, string material, int quantity) 
+    : name(name), color(color), category(category), material(material), quantity(quantity)  {}
 //--------------- DESTRUCTOR -----------------------//
 /*
 Item::~Item() :  {
@@ -27,12 +27,8 @@ void Item::setName(string name) {
     this->name = name;
 }
 
-void Item::setColor(string color){
-    this->color = color;
-}
-
-void Item::setFeatures(string features) {
-    this->features = features;
+void Item::setCategory(string category) {
+    this->category = category;
 }
 
 void Item::setMaterial(string material) {
@@ -49,12 +45,8 @@ string Item::getName() const {
     return this->name;
 }
 
-string Item::getColor() const {
-    return this->color;
-}
-
-string Item::getFeatures() const {
-    return this->features;
+string Item::getCategory() const {
+    return this->category;
 }
 
 string Item::getMaterial() const {
@@ -68,10 +60,9 @@ int Item::getQuantity() const {
 
 // ----------------- PRINT --------------//
 
-void Item::print() const {
+void Item::display() const {
     cout << "Item name      : " << this->name << endl;
-    cout << "Item color     : " << this->color << endl;
-    cout << "Item feature   : " << this->features << endl;
+    cout << "Item category  : " << this->category << endl;
     cout << "Item material  : " << this->material << endl;
     cout << "Item quantity  : x" << this->quantity << endl;
 }
