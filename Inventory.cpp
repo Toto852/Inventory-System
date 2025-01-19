@@ -15,6 +15,7 @@ void Inventory::addItem(Item* item) {
             return;  
         }
     }
+    cout << " Item : " << item->getName() << " successfully added on the inventory" << endl;
     inventory.push_back(item);
 }
 

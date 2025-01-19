@@ -8,7 +8,7 @@ using namespace std;
 
 class Item {
 
-protected : 
+private: 
     string name;
     string category;
     string material;
@@ -17,7 +17,6 @@ protected :
 public : 
 
     // Constructor
-    Item();
     Item(string name, string category, string material, int quantity);
 
     //~Item();

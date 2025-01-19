@@ -6,8 +6,6 @@ using namespace std;
 
 //--------------- CONSTRUCTOR -----------------------//
 
-Item::Item() : name("UNDEFINED"), category("UNDEFINED"), material("UNDEFINED"), quantity(0)  {}
-
 Item::Item(string name, string category, string material, int quantity) 
     : name(name), category(category), material(material), quantity(quantity)  {}
 
